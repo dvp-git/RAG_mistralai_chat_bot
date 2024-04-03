@@ -1,2 +1,2 @@
-# RAG_llama2
+# RAG PDF chat app
 A RAG chatbot application using FAISS 
