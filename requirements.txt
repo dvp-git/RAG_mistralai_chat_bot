@@ -11,3 +11,7 @@ accelerate
 bitsandbytes
 jupyter
 wheel
+torch==2.2.2
+faiss-cpu==1.8.0
+torchaudio
+torchvision
