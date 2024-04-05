@@ -324,14 +324,14 @@ def generate_answer(query, doc_embeddings, all_pdf_formatted_dict, index , token
 
     # Generate an output of tokens
     outputs = llm_model.generate(**input_ids,
-                                 temperature=0.5,
+                                 temperature=0.3,
                                  do_sample=True,
-                                 max_new_tokens=256)
+                                 max_new_tokens=512)
     
     # Turn the output tokens into text
     generated_output = tokenizer.decode(outputs[0])        
-    print(f"Query: {query[0]}")
-    print(f"Answer:{generated_output.replace(prompt, '')}")
+    print(f"Query: {query}")
+    print(f"Answer:{generated_output.replace(prompt[3:], '')}")
 
 ####################################################################################
 # Data Pre-processing
@@ -370,12 +370,12 @@ faiss_index = create_and_save_faiss_index(dimension, embeddings_np)
 
 # retrieve_docs("Explain recurrent nueral networks", embeddings_np,documents_processed, embed_model, \
 #               faiss_index, n_return_docs=6, print_time=True, print_docs=True)
-# A little sloppy , needs to be 
 question=''
-while(question!='exit'):
-    question = input("Kindly ask your question\n")
-    if question == 'quit' or 'exit':
+while(question!='exit' or question == 'quit'):
+    question = input("\nKindly ask your question\n")
+    if (question == 'quit') or (question == 'exit'):
         break
     elif question == '':
         continue
-    generate_answer(question, batched_sentence_embeddings,documents_processed, faiss_index, tokenizer, embed_model, llm_model )
+    else:
+        generate_answer(question, batched_sentence_embeddings,documents_processed, faiss_index, tokenizer, embed_model, llm_model )
