@@ -28,7 +28,7 @@ Eg: I have uploaded the famous Attention is all you need, FAISS, Gemini and the 
 4. Once done, run the application in terminal using
 
  ```
- python app.py`
+ python app.py
  ```
  ![image](https://github.com/dvp-git/RAG_mistralai_chat_bot/assets/43114889/694f738b-470c-4f6b-9883-3f5457b3d76a)
 
