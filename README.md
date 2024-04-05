@@ -32,7 +32,7 @@ Eg: I have uploaded the famous Attention is all you need, FAISS, Gemini and the 
  ```
  ![image](https://github.com/dvp-git/RAG_mistralai_chat_bot/assets/43114889/694f738b-470c-4f6b-9883-3f5457b3d76a)
 
-6. Ask questions about the pdf and you should receive an answer.
+5. Ask questions about the pdf and you should receive an answer.
  
 Context based
 ![image](https://github.com/dvp-git/RAG_mistralai_chat_bot/assets/43114889/ed99d519-42b0-4f80-a669-7ae31d61e59f) -
