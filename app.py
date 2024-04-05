@@ -371,7 +371,7 @@ faiss_index = create_and_save_faiss_index(dimension, embeddings_np)
 # retrieve_docs("Explain recurrent nueral networks", embeddings_np,documents_processed, embed_model, \
 #               faiss_index, n_return_docs=6, print_time=True, print_docs=True)
 question=''
-while(question!='exit' or question == 'quit'):
+while(question!='exit' or question != 'quit'):
     question = input("\nKindly ask your question\n")
     if (question == 'quit') or (question == 'exit'):
         break
