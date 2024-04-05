@@ -1,6 +1,6 @@
 Rag-chat: A cli based pdf QnA assistant using mistral-ai-v2.0 , Faiss and all-mpnet-base-v2 sentence transformer
 
-Note: The application requires a bery high compute CPU/GPU even though it is a quantized version. I believe there are certain optimizations that can be performed, but the RAM memory requirement for me was about 16GB+. I used PaperSpace gradient notebooks while developing the application since there are fre shared GPU machines available.
+Note: The application requires a very high compute CPU/GPU even though it is a quantized version. I believe there are certain optimizations that can be performed, but the RAM memory requirement for me was about 16GB+. I used PaperSpace gradient notebooks while developing the application since there are free shared GPU machines available.
 
 You can signup using your email and start building on free GPU's too!
 https://www.paperspace.com/ 
@@ -22,7 +22,7 @@ git clone https://github.com/dvp-git/RAG_mistralai_chat_bot.git
 3. Upload the PDF documents you'd like to receive answers from in the project directory.
 
 Eg: I have uploaded the famous Attention is all you need, FAISS, Gemini and the Stanford NLP book pdf's. Make sure the books you upload are publicly available and not confidential documents.
-{noformat}
+
 ![image](https://github.com/dvp-git/RAG_mistralai_chat_bot/assets/43114889/248c808b-70c9-494b-96ff-b7f8685f44e1)
  
 4. Once done, run the application in terminal using
