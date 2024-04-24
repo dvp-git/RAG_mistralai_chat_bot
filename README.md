@@ -24,15 +24,22 @@ git clone https://github.com/dvp-git/RAG_mistralai_chat_bot.git
 Eg: I have uploaded the famous Attention is all you need, FAISS, Gemini and the Stanford NLP book pdf's. Make sure the books you upload are publicly available and not confidential documents.
 
 ![image](https://github.com/dvp-git/RAG_mistralai_chat_bot/assets/43114889/248c808b-70c9-494b-96ff-b7f8685f44e1)
- 
-4. Once done, run the application in terminal using
+
+4. Note that you would need HuggingFace Access Token to use the mistral-7b instruct model. You can create an Access token on Hugging face and use the following to apply your token
+ ```
+ huggingface-cli login
+ ```
+  ![image](https://github.com/dvp-git/RAG_mistralai_chat_bot/assets/43114889/ce0229c2-aaeb-4b5b-bf5d-509856c42088)
+  ![image](https://github.com/dvp-git/RAG_mistralai_chat_bot/assets/43114889/b4267e0d-23d5-4ed4-ab4b-f4aa62c27b72)
+
+5. Once done, run the application in terminal using
 
  ```
  python app.py
  ```
  ![image](https://github.com/dvp-git/RAG_mistralai_chat_bot/assets/43114889/694f738b-470c-4f6b-9883-3f5457b3d76a)
 
-5. Ask questions about the pdf and you should receive an answer.
+6. Ask questions about the pdf and you should receive an answer.
  
 Context based
 ![image](https://github.com/dvp-git/RAG_mistralai_chat_bot/assets/43114889/ed99d519-42b0-4f80-a669-7ae31d61e59f) -
@@ -43,7 +50,7 @@ Contextless question:
 It is likely you will get answers to only context based questions, i.e. the answers are somewhere in the pdf. However you can always increase the temperature of the llm and have more randomness in the generated output, so go forth and experiment!
 
 
-6. To exit , type : `quit` or `exit` and hit Enter.
+7. To exit , type : `quit` or `exit` and hit Enter.
  
 The application is experimental since I wanted to build a RAG application from scratch without using LangChain or the amazing libraries available. 
 I think generative AI is great once you start learning the intricate details of what actually goes on under the hood.
