@@ -1,12 +1,12 @@
 Rag-chat: A cli based pdf QnA assistant using mistral-ai-v2.0 , Faiss and all-mpnet-base-v2 sentence transformer
-
+---
 Note: The application requires a very high compute CPU/GPU even though it is a quantized version. I believe there are certain optimizations that can be performed, but the RAM memory requirement for me was about 16GB+. I used PaperSpace gradient notebooks while developing the application since there are free shared GPU machines available.
 
 You can signup using your email and start building on free GPU's too!
 https://www.paperspace.com/ 
 
 Install and Usage:
-------------------
+---
 1. Clone the directory to your local environment
 
 ```
@@ -57,7 +57,7 @@ I think generative AI is great once you start learning the intricate details of 
 
 
 Resources :
-------------
+---
 Krish Naik - Videos on Building RAG, generative AI
 DeepLearning.ai : Awesome courses to get you started on generative AI and deep learning.
 How to build a RAG from scratch - 
